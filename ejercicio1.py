@@ -27,28 +27,26 @@ def calcular_hora():
             "Por favor ingresa la hora en formato HH:MM"
         )
 
-# ---------------- VENTANA PRINCIPAL ----------------
 ventana = tk.Tk()
-ventana.title("Reloj en el Espejo 💗")
+ventana.title("Reloj en el Espejo ")
 ventana.geometry("380x260")
 ventana.resizable(False, False)
-ventana.configure(bg="#FCE4EC")  # Rosa pastel
+ventana.configure(bg="#FCE4EC") 
 
-# ---------------- CONTENEDOR ----------------
+
 frame = tk.Frame(ventana, bg="#FCE4EC")
 frame.pack(expand=True)
 
-# ---------------- TÍTULO ----------------
+
 titulo = tk.Label(
     frame,
-    text="⏰ Hora reflejada en el espejo",
+    text=" Hora reflejada en el espejo",
     font=("Comic Sans MS", 15, "bold"),
     bg="#FCE4EC",
     fg="#880E4F"
 )
 titulo.pack(pady=10)
 
-# ---------------- TEXTO ----------------
 texto = tk.Label(
     frame,
     text="Ingresa la hora (formato 24 hrs)",
@@ -58,7 +56,6 @@ texto = tk.Label(
 )
 texto.pack()
 
-# ---------------- ENTRADA ----------------
 entrada = tk.Entry(
     frame,
     font=("Arial", 14),
@@ -68,7 +65,6 @@ entrada = tk.Entry(
 )
 entrada.pack(pady=8)
 
-# ---------------- BOTÓN ----------------
 boton = tk.Button(
     frame,
     text="💖 Calcular Hora Real 💖",
@@ -84,7 +80,6 @@ boton = tk.Button(
 )
 boton.pack(pady=10)
 
-# ---------------- RESULTADO ----------------
 resultado = tk.Label(
     frame,
     text="",
@@ -95,4 +90,5 @@ resultado = tk.Label(
 resultado.pack(pady=10)
 
 # ---------------- EJECUCIÓN ----------------
+
 ventana.mainloop()
